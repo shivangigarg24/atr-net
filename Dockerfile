@@ -31,7 +31,7 @@ RUN mkdir /workspace && \
     pip install -r requirements.txt 
     
 #RUN conda env create -f /workspace/VQA_ReGAT/tools/environment.yml
-
+RUN apt-get install --reinstall ca-certificates
 # Activate the environment, and make sure it's activated:
 #CMD ["conda", "run", "-n", "v"]
 #RUN /bin/bash -c "source activate vqa"
