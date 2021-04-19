@@ -26,8 +26,8 @@ RUN apt-get update
 # clone and install openvqa dependencies
 RUN mkdir /workspace && \
     cd /workspace && \    
-    git clone https://github.com/shivangigarg24/atr-net.git && \
-    cd atr-net && \
+    git clone https://github.com/shivangigarg24/easy-VQA-keras.git && \
+    cd easy-VQA-keras && \
     pip install -r requirements.txt 
     
 #RUN conda env create -f /workspace/VQA_ReGAT/tools/environment.yml
