@@ -1,7 +1,4 @@
-numpy==1.16.2
-torch==1.0.1
-opencv-python==4.0.0.21
-colorlog==4.0.2
-h5py==2.9.0
-matplotlib==3.0.3
-xmltodict==0.12.0
+easy-vqa>=1.0
+tensorflow>=2.3.0
+Pillow>=7.0.0
+numpy>=1.18.0
