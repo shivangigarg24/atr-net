@@ -24,11 +24,12 @@ RUN apt-get update
 #RUN useradd -ms /bin/bash admin
 #USER admin 
 # clone and install openvqa dependencies
+RUN pip install --upgrade pip
 RUN mkdir /workspace && \
     cd /workspace && \    
     git clone https://github.com/shivangigarg24/easy-VQA-keras.git && \
     cd easy-VQA-keras && \
-    pip3 install -r requirements.txt 
+    pip install -r requirements.txt 
     
 #RUN conda env create -f /workspace/VQA_ReGAT/tools/environment.yml
 RUN apt-get install --reinstall ca-certificates
