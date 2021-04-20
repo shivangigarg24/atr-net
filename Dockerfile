@@ -28,7 +28,7 @@ RUN mkdir /workspace && \
     cd /workspace && \    
     git clone https://github.com/shivangigarg24/easy-VQA-keras.git && \
     cd easy-VQA-keras && \
-    pip install -r requirements.txt 
+    pip3 install -r requirements.txt 
     
 #RUN conda env create -f /workspace/VQA_ReGAT/tools/environment.yml
 RUN apt-get install --reinstall ca-certificates
